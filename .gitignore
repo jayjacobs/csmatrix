@@ -6,4 +6,6 @@
 .Rproj.user
 
 __pycache__
+receipts
+*.swp
 

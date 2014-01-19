@@ -6,7 +6,7 @@
 
 
 ## 1: (Task 0.5.1) Minutes in a Week
-minutes_in_week = ...
+minutes_in_week = 60*24*7
 
 
 
