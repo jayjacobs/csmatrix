@@ -1,0 +1,69 @@
+$ python3 ../matrix/submit.py The_Field.py 
+= Coding the Matrix Homework and Lab Submission
+Fetching problems
+Importing your stencil file
+username: jay
+This assignment has the following parts:
+  1) Problem 1.7.1Python Comprehensions: Filtering
+  2) Problem 1.7.2Python Comprehensions: Lists of Lists
+  3) Problem 1.7.3Python Comprehensions: Function Composition
+  4) Problem 1.7.4Summing numbers in a list
+  5) Problem 1.7.5Multiplying numbers in a list
+  6) Problem 1.7.6Minimum of a list
+  7) Problem 1.7.7Concatenation of a List
+  8) Problem 1.7.8Union of Sets in a List
+  9) Problem 1.7.10Complex Addition Practice
+  10) Problem 1.7.12Combining Complex Operations
+  11) Problem 1.7.13GF(2) Arithmetic
+
+Which parts do you want to submit? (Ex: 1, 4-7): 1-11
+== Submitting "Problem 1.7.1Python Comprehensions: Filtering"
+Incorrect answer for Problem 1.7.1Python Comprehensions: Filtering
+
+== Submitting "Problem 1.7.2Python Comprehensions: Lists of Lists"
+Incorrect answer for Problem 1.7.2Python Comprehensions: Lists of Lists
+
+== Submitting "Problem 1.7.3Python Comprehensions: Function Composition"
+Incorrect answer for Problem 1.7.3Python Comprehensions: Function Composition
+
+== Submitting "Problem 1.7.4Summing numbers in a list"
+Incorrect answer for Problem 1.7.4Summing numbers in a list
+
+== Submitting "Problem 1.7.5Multiplying numbers in a list"
+Incorrect answer for Problem 1.7.5Multiplying numbers in a list
+
+== Submitting "Problem 1.7.6Minimum of a list"
+Incorrect answer for Problem 1.7.6Minimum of a list
+
+== Submitting "Problem 1.7.7Concatenation of a List"
+TEST ERROR: AttributeError: 'NoneType' object has no attribute 'encode'
+TEST ERROR: AttributeError: 'NoneType' object has no attribute 'encode'
+Incorrect answer for Problem 1.7.7Concatenation of a List
+
+== Submitting "Problem 1.7.8Union of Sets in a List"
+Incorrect answer for Problem 1.7.8Union of Sets in a List
+
+== Submitting "Problem 1.7.10Complex Addition Practice, Part 1"
+Incorrect answer for Problem 1.7.10Complex Addition Practice, Part 1
+
+== Submitting "Problem 1.7.10Complex Addition Practice, Part 2"
+Incorrect answer for Problem 1.7.10Complex Addition Practice, Part 2
+
+== Submitting "Problem 1.7.10Complex Addition Practice, Part 3"
+Incorrect answer for Problem 1.7.10Complex Addition Practice, Part 3
+
+== Submitting "Problem 1.7.10Complex Addition Practice, Part 4"
+Incorrect answer for Problem 1.7.10Complex Addition Practice, Part 4
+
+== Submitting "Problem 1.7.12Combining Complex Operations"
+Incorrect answer for Problem 1.7.12Combining Complex Operations
+
+== Submitting "Problem 1.7.13GF(2) Arithmetic, Part 1"
+Incorrect answer for Problem 1.7.13GF(2) Arithmetic, Part 1
+
+== Submitting "Problem 1.7.13GF(2) Arithmetic, Part 2"
+Incorrect answer for Problem 1.7.13GF(2) Arithmetic, Part 2
+
+== Submitting "Problem 1.7.13GF(2) Arithmetic, Part 3"
+Incorrect answer for Problem 1.7.13GF(2) Arithmetic, Part 3
+
