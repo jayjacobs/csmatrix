@@ -58,19 +58,20 @@ def equal(u,v):
     False
 
     """
-    assert u.D == v.D
-    retval = True
-    for k in u.f:
-        if k not in v.f:
-            retval = False
-        elif not u.f[k] == v.f[k]:
-            retval = False
-    for k in v.f:
-        if k not in u.f:
-            retval = False
-        elif not v.f[k] == u.f[k]:
-            retval = False
-    # Note, this fails to pass the test
+    retval = False
+    if u.D == v.D:
+        first = []
+        second = []
+        for k in u.D:
+            if k in u.f:
+                first.append(u.f[k])
+            else:
+                first.append(0)
+            if k in v.f:
+                second.append(v.f[k])
+            else:
+                second.append(0)
+        retval = first == second
     return retval
 
 def add(u,v):

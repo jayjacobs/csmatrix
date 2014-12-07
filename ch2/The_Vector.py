@@ -3,6 +3,9 @@
 
 # Some of the GF2 problems require use of the value GF2.one so the stencil imports it.
 
+import sys
+import itertools
+sys.path.insert(1,'util')
 from GF2 import one
 
 
@@ -74,39 +77,81 @@ vdict['bcde'] = add2(add3(vecb, vecc, vecd), vece)
 for i in vdict.keys():
     if vdict[i] == u1:
         print(i, " == u1")
+        u_0010010 = i
     if vdict[i] == u2:
         print(i, " == u2")
+        u_0100010 = i
 
-u_0010010 = "cde"
-u_0100010 = "bcde"
+u_0010010 = ('c', 'd', 'e')
+u_0100010 = ('b', 'c', 'd', 'e')
+u_0010010 = {'c', 'd', 'e'}
+u_0100010 = {'b', 'c', 'd', 'e'}
 
+# {'a','b','c'} is the subset consisting of:
 
 
 ## 5: (Problem 2.14.5) GF2 Vector Addition B
 # Use the same format as the previous problem
 
-v_0010010 = ...
-v_0100010 = ...
+labels = ['a', 'b', 'c', 'd', 'e', 'f']
+allv = {'a':[one, one, one, 0, 0, 0, 0],
+        'b':[0, one, one, one, 0, 0, 0],
+        'c':[0, 0, one, one, one, 0, 0],
+        'd':[0, 0, 0, one, one, one, 0],
+        'e':[0, 0, 0, 0, one, one, one],
+        'f':[0, 0, 0, 0, 0, one, one] }
+u1 = [0, 0, one, 0, 0, one, 0]
+u2 = [0, one, 0, 0, 0, one, 0]
+u1 = [0, 0, one, 0, 0, 0, 0]
 
+v_0010010 = []
+v_0100010 = []
+for L in range(0, len(labels)+1):
+    for subset in itertools.combinations(labels, L):
+        if len(subset) > 1:
+            base = allv[subset[0]]
+            for K in range(1,len(subset)):
+                base = add2(base, allv[subset[K]])
+            if base == u1:
+                v_0010010.append(''.join(subset))
+                # v_0010010.append(''.join(subset))
+            if base == u2:
+                v_0100010.append(''.join(subset))
+                # v_0100010.append(''.join(subset))
+
+v_0010010 = {'c', 'd'}
+v_0100010 = set()
+print(v_0010010) # "cd"
+print(v_0100010) # no match
 
 
 ## 6: (Problem 2.14.6) Solving Linear Equations over GF(2)
 #You should be able to solve this without using a computer.
-x_gf2 = [...]
+x_gf2 = [0, 1, 1, 1]
 
 
 
 ## 7: (Problem 2.14.7) Formulating Equations using Dot-Product
 #Please provide each answer as a list of numbers
-v1 = [...]
-v2 = [...]
-v3 = [...]
+def list_dot(u, v):
+    return sum([a*b for (a,b) in zip(u,v)])
 
+v1 = [2, 3, -4, 1]
+v2 = [1, -5, 2, 0]
+v3 = [4, 1, -1, -1]
+
+x1 = [1,1,-1,1]
+x2 = [8, -4, 1, 8]
+x3 = [1, 6, 1, 1]
+print("10 =", list_dot(x1, v1))
+print("35 =", list_dot(x2, v2))
+print("8 =", list_dot(x3, v3))
 
 
 ## 8: (Problem 2.14.9) Practice with Dot-Product
-uv_a = ...
-uv_b = ...
-uv_c = ...
-uv_d = ...
+uv_a = list_dot([1,0], [5,4321])
+uv_b = list_dot([0,1], [12345,6])
+uv_c = list_dot([-1,3], [5,7])
+uv_d = list_dot([-0.7071, 0.7071], [0.7071, -0.7071]) # or -1
+uv_d = -1
 
